@@ -9,9 +9,9 @@
     <form action="http://fe.it-academy.by/TestForm.php">
     <fieldset>
         <legend>Личные данные</legend>
-        <input type="text" name="LastName" placeholder="Фамилия" maxlength="25" pattern="[А-Я]" required autofocus><br>
-        <input type="text" name="FirstName" placeholder="Имя" maxlength="20" pattern="[А-Яа-яЁё]" required><br>
-        <input type="text" name="Patronymic" placeholder="Отчество" maxlength="24" pattern="[А-Яа-яЁё]" required>
+        <input type="text" name="LastName" placeholder="Фамилия" maxlength="25" pattern="[А-Яа-яЁё]" required autofocus><br>
+        <input type="text" name="FirstName" placeholder="Имя" maxlength="20" pattern="[А-Яа-я]" required><br>
+        <input type="text" name="Patronymic" placeholder="Отчество" maxlength="24" pattern="[А-Яа-я]" required>
         <fieldset>
             <legend>Паспортные данные</legend>
             <input type="text" name="PassportSeries" placeholder="AA" size="2" maxlength="2" pattern="[A-Z]{2}" required>
@@ -48,10 +48,10 @@
         <legend>Интересы</legend>
         <fieldset>
             <legend>Хобби</legend>
-            <input type="checkbox" name="hobby" value="fishing">Рыбалка<br>
-            <input type="checkbox" name="hobby" value="astronomy">Астрономия<br>
-            <input type="checkbox" name="hobby" value="diving">Дайвинг<br>
-            <input type="checkbox" name="hobby" value="stamps">Марки
+            <input type="checkbox" name="hobby[]" value="fishing">Рыбалка<br>
+            <input type="checkbox" name="hobby[]" value="astronomy">Астрономия<br>
+            <input type="checkbox" name="hobby[]" value="diving">Дайвинг<br>
+            <input type="checkbox" name="hobby[]" value="stamps">Марки
         </fieldset>
         <fieldset>
             <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
